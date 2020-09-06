@@ -1,0 +1,52 @@
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+.App-title {
+  font-size: 3em;
+  text-align: center;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.body {
+  text-align: left;
+  margin: 20px;
+}
+
+.column {
+  float: left;
+  text-align: left;
+  margin: 20px;
+  width: 30%;
+  font-size: 22px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.event {
+  background-color: whitesmoke;
+  border: 2px solid lightgray
+}
+
+button {
+  font-size: 22px;
+  margin: 20px;
+  cursor: pointer;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

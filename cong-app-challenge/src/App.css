@@ -12,6 +12,11 @@
   text-align: center;
 }
 
+.App-title a:visited{
+  text-decoration: none;
+  color: white;
+}
+
 .App-intro {
   font-size: large;
 }

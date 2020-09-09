@@ -7,7 +7,7 @@ class EventDashboard extends Component {
         return(
             <div className="App">
             <header className="App-header">
-              <h1 className="App-title">Party Planner</h1>
+              <h1 className="App-title"><Link to = "/">Party Planner</Link></h1>
               <h2>Event Dashboard</h2>
             </header>
             <h1 className="body">My Events</h1>
@@ -19,6 +19,9 @@ class EventDashboard extends Component {
             <Event eventName="Casie's Baby Shower" eventTime="4:00pm"/>
             <Event eventName="Nellie's Graduation" eventTime="7:00pm"/>
             <button>+Add New Event</button>
+            <button>
+                <Link to = {{pathname: "/guestlist"}}>View the Guest List</Link>
+            </button>
           </div>
         );
     }

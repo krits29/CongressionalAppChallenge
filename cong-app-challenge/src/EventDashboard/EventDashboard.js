@@ -18,11 +18,15 @@ class EventDashboard extends Component {
             <Event eventName="Sally's Bday" eventTime="1:00pm"/>
             <Event eventName="Casie's Baby Shower" eventTime="4:00pm"/>
             <Event eventName="Nellie's Graduation" eventTime="7:00pm"/>
-            <button>+Add New Event</button>
+            <button>
+            <Link to = {{pathname: "/createnewevent"}}>+Add New Event</Link>
+            </button>
             <button>
                 <Link to = {{pathname: "/guestlist"}}>View the Guest List</Link>
             </button>
           </div>
+
+
         );
     }
 }

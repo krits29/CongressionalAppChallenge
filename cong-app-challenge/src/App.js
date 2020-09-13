@@ -6,6 +6,7 @@ import { Route } from "react-router-dom";
 import EventDashboard from './EventDashboard/EventDashboard';
 import GuestList from './GuestList/GuestList.js';
 import CreateNewEvent from "./CreateNewEvent/CreateNewEvent.js";
+import ChooseEventType from "./ChooseEventType/ChooseEventType.js";
 
 class App extends Component {
   render() {
@@ -15,6 +16,7 @@ class App extends Component {
           <Route path = "/" exact component = {EventDashboard}/>
           <Route path = "/guestlist" exact component = {GuestList}/>
           <Route path="/createnewevent" exact component={CreateNewEvent} />
+          <Route path="/chooseeventtype" exact component={ChooseEventType} />
         </div>
       </BrowserRouter>
     );

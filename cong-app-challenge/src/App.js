@@ -9,6 +9,7 @@ import CreateNewEvent from "./CreateNewEvent/CreateNewEvent.js";
 import ChooseEventType from "./ChooseEventType/ChooseEventType.js";
 import VirtualPlatform from "./VirtualPlatform/VirtualPlatform.js";
 import VirtualChoose from "./VirtualChoose/VirtualChoose.js";
+import VirtualActivityDiagnostic from "./VirtualActivityDiagnostic/VirtualActivityDiagnostic.js";
 
 class App extends Component {
   render() {
@@ -21,6 +22,7 @@ class App extends Component {
           <Route path="/chooseeventtype" exact component={ChooseEventType} />
           <Route path="/virtualplatform" exact component={VirtualPlatform} />
           <Route path="/virtualchoose" exact component={VirtualChoose} />
+          <Route path="/virtualactivitydiagnostic" exact component={VirtualActivityDiagnostic} />
         </div>
       </BrowserRouter>
     );

@@ -2,6 +2,15 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
 class NewGuest extends Component {
+    state = {
+        allGuests: []
+    };
+    
+    guestNameAddedHandler = (event) => {
+        const newGuestList = [...this.state.allGuests, {name: event.target.value}];
+        this.setState({allGuests: newGuestList});
+    }
+
   render() {
     return (
       <div className="App">
@@ -15,12 +24,12 @@ class NewGuest extends Component {
 
         <div className="row">
           <p className="column">
-            <label for="name">Guest Name:</label>
+            <label htmlFor="name">Guest Name:</label>
           </p>
           <p className="column">Email Address:</p>
         </div>
 
-        <div classname="row">
+        <div className="row">
           <input className="column" type="text" id="name" name="name" />
           <input className="column" type="text" id="email" name="email" />
         </div>

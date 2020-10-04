@@ -21,7 +21,15 @@ class GuestList extends Component {
             <Guest guestName="Jooe" guestEmail="jooe@gmail.com" guestStatus="Pending"/>
             <Guest guestName="Pablo" guestEmail="pablo@yahoo.com" guestStatus="Accepted"/>
             <Guest guestName="Bree" guestEmail="bree@gmail.com" guestStatus="Pending"/>
-            <button>+New Guest</button>
+            
+            <button>
+              <Link to={{ pathname: "/newguest" }}>+ Add New Guest</Link>
+            </button>
+            
+            <button>
+              <Link to={{ pathname: "/" }}>Back to Events</Link>
+            </button>
+
           </div>
         );
     }

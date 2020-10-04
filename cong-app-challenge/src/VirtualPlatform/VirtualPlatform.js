@@ -25,14 +25,18 @@ class VirtualPlatform extends Component {
           }
         >
           <div className="better">
-            <QuestionGroup questionNumber={0}>
-              <Question>Platform</Question>
-              <Option value="0">Zoom</Option>
-
-              <Option value="1">GoToMeeting</Option>
-              <Option value="2">Teams</Option>
-              <Option value="3">Google Meet</Option>
-            </QuestionGroup>
+            <Test>
+              <QuestionGroup questionNumber={0}>
+                <Question>Platform</Question>
+                <Option value="0">Zoom</Option>
+                <Option value="1">GoToMeeting</Option>
+                <Option value="2">Sykpe</Option>
+                <Option value="3">MS Teams</Option>
+                <Option value="4">Google Meet</Option>
+                <Option value="5">WhatsApp</Option>
+                <Option value="6">FaceTime</Option>
+              </QuestionGroup>
+            </Test>
           </div>
         </Test>
         <br />
